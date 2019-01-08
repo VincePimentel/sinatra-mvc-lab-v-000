@@ -26,7 +26,5 @@ class PigLatinizer
         "#{word}"
       end
     end
-
-    "#{pig_array.join(" ")}"
   end
 end
