@@ -13,11 +13,11 @@ class PigLatinizer
       o
       u
     ]
-    
+
     if vowels.include?(str[0])
       str[0] = ""
-      
-      "#{str}"
+
+      "#{str}ay"
     else
 
     end
