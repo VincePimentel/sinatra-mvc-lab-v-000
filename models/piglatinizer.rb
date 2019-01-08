@@ -24,8 +24,10 @@ class PigLatinizer
 
         pig_array << "#{word}ay"
       else
-        "#{word}"
+        pig_array << "#{word}"
       end
     end
+
+    pig_array.join(" ")
   end
 end
