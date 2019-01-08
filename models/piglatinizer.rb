@@ -20,6 +20,7 @@ class PigLatinizer
 
     str_array.each do |word|
       if !vowels.include?(word[0])
+        letter = word[0]
         word[0] = ""
 
         pig_array << "#{word}ay"
