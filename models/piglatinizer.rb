@@ -19,7 +19,7 @@ class PigLatinizer
     pig_array = Array.new
 
     str_array.each do |word|
-      if !vowels.include?(word[0])
+      if !vowels.include?(word[0].downcase)
         letter = word[0]
         word[0] = ""
 
