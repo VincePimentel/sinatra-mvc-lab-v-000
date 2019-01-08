@@ -16,14 +16,12 @@ class PigLatinizer
 
     str_array = str.split(" ")
 
-    pig_array = Array.new
-
-    str_array.each do |word|
+    str_array.collect do |word|
       if !vowels.include?(word[0].downcase)
         letter = word[0]
         word[0] = ""
 
-        pig_array << "#{word}#{letter}ay"
+        "#{word}#{letter}ay"
       else
         pig_array << "#{word}"
       end
