@@ -19,7 +19,7 @@ class PigLatinizer
 
       "#{str}ay"
     else
-
+      str
     end
   end
 end
