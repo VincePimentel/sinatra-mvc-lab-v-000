@@ -23,7 +23,7 @@ class PigLatinizer
 
         "#{word}#{letter}ay"
       else
-        pig_array << "#{word}"
+        "#{word}"
       end
     end
 
