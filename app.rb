@@ -6,6 +6,7 @@ class App < Sinatra::Base
   end
 
   post "/" do
-    erb :display
+    @word = PigLatinizer.new(params[:text])
+    erb :pigify
   end
 end
