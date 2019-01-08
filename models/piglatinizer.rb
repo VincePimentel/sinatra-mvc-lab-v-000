@@ -16,6 +16,8 @@ class PigLatinizer
 
     str_array = str.split(" ")
 
+    pigified_array = Array.new
+
     str_array.each do |word|
       if !vowels.include?(word[0])
         word[0] = ""
