@@ -16,13 +16,13 @@ class PigLatinizer
 
     str_array = str.split(" ")
 
-    pigified_array = Array.new
+    pig_array = Array.new
 
     str_array.each do |word|
       if !vowels.include?(word[0])
         word[0] = ""
 
-        "#{word}ay"
+        pig_array << "#{word}ay"
       else
         "#{word}"
       end
