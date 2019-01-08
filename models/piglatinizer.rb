@@ -1,3 +1,2 @@
-class PigLatinizer < ActiveRecord::Base
-
+class PigLatinizer
 end
