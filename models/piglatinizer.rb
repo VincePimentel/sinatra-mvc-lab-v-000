@@ -23,7 +23,7 @@ class PigLatinizer
 
         "#{word}#{letter}ay"
       else
-        "#{word}"
+        "#{word}way"
       end
     end
   end
