@@ -14,12 +14,16 @@ class PigLatinizer
       u
     ]
 
-    if !vowels.include?(str[0])
-      str[0] = ""
+    str_array = str.split(" ")
 
-      "#{str}ay"
-    else
-      "#{str}"
+    str_array.each do |word|
+      if !vowels.include?(word[0])
+        word[0] = ""
+
+        "#{word}ay"
+      else
+        "#{word}"
+      end
     end
   end
 end
