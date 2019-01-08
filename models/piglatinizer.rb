@@ -14,7 +14,7 @@ class PigLatinizer
       u
     ]
 
-    if vowels.include?(str[0])
+    if !vowels.include?(str[0])
       str[0] = ""
 
       "#{str}ay"
