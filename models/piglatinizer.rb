@@ -28,6 +28,6 @@ class PigLatinizer
       end
     end
 
-    pig_array.join(" ")
+    "#{pig_array.join(" ")}"
   end
 end
