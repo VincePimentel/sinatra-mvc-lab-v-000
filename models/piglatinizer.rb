@@ -5,7 +5,21 @@ class PigLatinizer
     @str = str
   end
 
-  def pig_latinize
-    str.
+  def pigify
+    vowels = %w[
+      a
+      e
+      i
+      o
+      u
+    ]
+    
+    if vowels.include?(str[0])
+      str[0] = ""
+      
+      "#{str}"
+    else
+
+    end
   end
 end
